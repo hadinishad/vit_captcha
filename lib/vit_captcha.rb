@@ -5,7 +5,7 @@ include Magick
 class Captcha
 
   def initialize(file_location)
-    @img = ImageList.new(file_location).crop(20,3,87,22).threshold(100).write("test.png")
+    @img = ImageList.new(file_location).crop(20,3,87,22).threshold(100)
     @matrix = get_matrix(@img)
     @row = @matrix.size
     @col = @matrix[0].size
