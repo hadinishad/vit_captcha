@@ -1,8 +1,10 @@
 # VitCaptcha
 
-TODO: Write a gem description
+A gem for solving the Captcha on VIT Academics page. Ruby port of [CaptchaParser](https://github.com/karthikb351/CaptchaParser).
 
 ## Installation
+
+Make sure you have the RMagick gem installed. Then,
 
 Add this line to your application's Gemfile:
 
@@ -20,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "vit_captcha"
+img = Captcha.new("captcha.bmp")
+captcha = img.get_captcha
+```
 
 ## Contributing
 
